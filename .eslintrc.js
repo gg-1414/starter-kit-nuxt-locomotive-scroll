@@ -5,7 +5,8 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
+    requireConfigFile: false,
     ecmaVersion: 2020,
     sourceType: 'module',
   },
@@ -27,5 +28,6 @@ module.exports = {
         message: 'Unexpected property on console object was called',
       },
     ],
+    'vue/multi-word-component-names': 0,
   },
 }
